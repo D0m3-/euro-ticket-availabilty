@@ -4,6 +4,7 @@ var cheerio = require('cheerio')
 
 var gameId = "66,127"
 var interval = 2000
+var body = "token=appToken&user=groupToken&message=tickets"
 
 console.log("Hello ! Watching Italy-Sweden tickets availability...")
 requestAvailability()
@@ -21,7 +22,20 @@ function requestAvailability(){
 			} else {
 				// tickets !!!
 				console.log("tickets!!")
+				sendNotif()
 			}
 		}
+	})
+}
+
+function sendNotif(){
+	request({
+		uri:'https://api.pushover.net/1/messages.json',
+		method: "POST",
+		body: body
+	}, function(error, response, body){
+		console.log(error)
+		//console.log(response)
+		console.log(body)
 	})
 }
