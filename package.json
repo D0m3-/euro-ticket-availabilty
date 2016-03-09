@@ -1,0 +1,14 @@
+{
+  "name": "euro-availability",
+  "version": "0.0.1",
+  "description": "check if tickets of a given game are available",
+  "author": "Florian Bernard",
+  "main": "src/js/index.js",
+  "scripts": {
+    "start": "node src/js/index.js"
+  },
+  "dependencies": {
+    "cheerio": "^0.20.0",
+    "request": "^2.69.0"
+  }
+}
