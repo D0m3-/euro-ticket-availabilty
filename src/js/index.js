@@ -11,8 +11,6 @@ const gameId = '388137968'
 // cookie required to be accepted by UEFA server
 const token = "p1pkpcontroller1d-cfe8f2cdb96d14c418388033271ff61f6ff105a6c8241fe0a82ab4f466ab9f1d91d0490dcd8e36bdadcdb05dce44d34f4a53733b95e7819f934d0acfb38e76c6"
 
-const account ="3EDCF7191AFAC509CE9AD3E15BB5B570"
-
 // pushOver keys
 const groupKey = "yourgroupkey"
 const appKey = "yourappkey"
